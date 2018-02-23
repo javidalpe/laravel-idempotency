@@ -1,0 +1,28 @@
+{
+    "name": "javidalpe/laravel-idempotency",
+    "description": "Laravel Idempotency Middleware",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Javier Vidal",
+            "email": "jvpenya@gmail.com"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "middleware",
+        "idempotency",
+        "api"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Javidalpe\\Idempotency\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
