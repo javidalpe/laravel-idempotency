@@ -24,7 +24,7 @@ Register Idempotency middleware on your http kernel file:
 ], 
 ```
 
-Then, to perform an idempotent request, provide an additional `Idempotency-Key: <key>` header to the request.
+To perform an idempotent request, provide an additional `Idempotency-Key: <key>` header to the request.
 
 ### How it works
 
@@ -34,4 +34,4 @@ How you create unique keys is up to you, but I suggest using V4 UUIDs or another
 
 ### License
 
-The Laravel IDE Helper Generator is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The Laravel Idempotency is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
