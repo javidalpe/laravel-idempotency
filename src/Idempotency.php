@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Cache;
 class Idempotency
 {
     const IDEMPOTENCY_HEADER = "Idempotency-Key";
-    const EXPIRATION_IN_MINUTES = 60*24;
+    const EXPIRATION_IN_MINUTES = 1440; // 24 hours
 
     /**
      * Handle an incoming request.
@@ -19,7 +19,7 @@ class Idempotency
      */
     public function handle($request, Closure $next)
     {
-        if ($request->method() == 'GET' || $request->method() == 'DELETE') {
+        if ($request->method() == 'GET' || $request->method() == 'PUT' || $request->method() == 'DELETE') {
             return $next($request);
         }
 
